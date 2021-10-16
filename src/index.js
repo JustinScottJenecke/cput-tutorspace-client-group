@@ -2,14 +2,6 @@ import tabFunctionality from "./js/tabFunction.js";
 
 tabFunctionality();
 
-/*
-const deviceTable = document.querySelector('#tableBody')
-
-    fetch('http://localhost:8080/ts/api/v1/post')
-        .then(result => {
-            console.log(result);
-        });
-*/    
 //------------------------------------------------------
 
  /*   function populateDeviceTable() {
@@ -38,7 +30,6 @@ const deviceTable = document.querySelector('#tableBody')
                 deviceTable.innerHTML += row
         
             })
-            
         }
         request.send()
     
