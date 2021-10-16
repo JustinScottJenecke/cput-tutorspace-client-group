@@ -106,7 +106,13 @@ body {
 }
 
 .tab {
+    display: none;
+}
+
+.active__tab {
     padding: 2rem 2rem 1rem 2rem;
+    background-color: silver;
+    display: flex;
 }
 
 .form {

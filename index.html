@@ -21,44 +21,30 @@
         <div class="content">
         <!--*
         *--------------Landing - Table to view posts--------------
+
+        this.postId = b.postId;
+        this.studentNo = b.studentNo;
+        this.firstName = b.firstName;
+        this.lastName = b.lastName;
+        this.email = b.email;
+        this.institution = b.institution;
+        this.major = b.major;
+        this.subject = b.subject;
+
         *-->
             <div class="tab active__tab" id="home">
                 <table>
-                    <tr>
-                      <th>Tutor</th>
+                    <thead>
+                      <th>Student Number</th>
+                      <th>Name</th>
+                      <th>Lastname</th>
+                      <th>Email</th>
+                      <th>Institution</th>
+                      <th>Major</th>
                       <th>Subject</th>
-                      <th>Cost</th>
-                    </tr>
-                    <tr>
-                      <td>John Hendricks</td>
-                      <td>Law</td>
-                      <td>R190</td>
-                    </tr>
-                    <tr>
-                      <td>Felicia Fibi</td>
-                      <td>Economics</td>
-                      <td>R352</td>
-                    </tr>
-                    <tr>
-                      <td>Sue Adams</td>
-                      <td>Psychology</td>
-                      <td>R150</td>
-                    </tr>
-                    <tr>
-                      <td>Kate Groenewald</td>
-                      <td>Information and Technology</td>
-                      <td>R210</td>
-                    </tr>
-                    <tr>
-                      <td>Daniel Peters</td>
-                      <td>Education</td>
-                      <td>R260</td>
-                    </tr>
-                    <tr>
-                      <td>Fikile Mthethwa</td>
-                      <td>Science</td>
-                      <td>R170</td>
-                    </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
                   </table>
             </div>
 
@@ -273,13 +259,15 @@
         *-->
 
             <div class="footer" id="footer">
-                <button class="footer__button">All Posts</button>
-                <button class="footer__button">Create Post</button>
-                <button class="footer__button">About</button>
-                <button class="footer__button">Contact</button>
+                <button data-tab="home" class="footer__button">All Posts</button>
+                <button data-tab="create" class="footer__button">Create Post</button>
+                <button data-tab="about" class="footer__button">About</button>
+                <button data-tab="contact" class="footer__button">Contact</button>
             </div>
         </div>
         
+        <script type="module" src="./src/index.js"></script>
+
     </body>
 
 </html>
